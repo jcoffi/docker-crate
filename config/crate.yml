@@ -1,10 +1,10 @@
 # Crate Configuration
-cluster.graceful_stop.min_availability:primaries
-cluster.routing.allocation.awareness.attributes:location
-stats.enabled:false
-gateway.recover_after_nodes:3
-http.cors.enabled:true
-http.cors.allow-origin:"/*"
+#cluster.graceful_stop.min_availability:primaries
+#cluster.routing.allocation.awareness.attributes:location
+#stats.enabled:false
+#gateway.recover_after_nodes:3
+#http.cors.enabled:true
+#http.cors.allow-origin:"/*"
 
 
 
