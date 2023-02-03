@@ -1,6 +1,4 @@
 # Crate Configuration
-
-cluster.initial_master_nodes:nexus
 cluster.graceful_stop.min_availability:primaries
 cluster.routing.allocation.awareness.attributes:location
 stats.enabled:false
