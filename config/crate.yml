@@ -1,16 +1,18 @@
 # Crate Configuration
-#cluster.graceful_stop.min_availability:primaries
-#cluster.routing.allocation.awareness.attributes:location
-#stats.enabled:false
-#gateway.recover_after_nodes:3
-#http.cors.enabled:true
-#http.cors.allow-origin:"/*"
+network.host: _tailscale0_,_local_
+cluster.graceful_stop.min_availability: primaries
+cluster.routing.allocation.awareness.attributes: location
+gateway.auto_import_dangling_indices: true
+node.store.allow_mmap: false
+http.cors.enabled: true
+http.cors.allow-origin: "/*"
+stats.enabled: false
 
 
 
 # Paths
 path:
-  logs: /data/log
-  data: /data/data
+  logs: /data/crate/log
+  data: /data/crate/data
 blobs:
-  path: /data/blobs
+  path: /data/crate/blobs
