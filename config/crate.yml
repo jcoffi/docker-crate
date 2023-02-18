@@ -1,9 +1,10 @@
 # Crate Configuration
 network.host: _tailscale0_,_local_
+network.publish_host: _tailscale0_
 cluster.graceful_stop.min_availability: primaries
 cluster.routing.allocation.awareness.attributes: location
-gateway.auto_import_dangling_indices: true
 node.store.allow_mmap: false
+node.data: true
 http.cors.enabled: true
 http.cors.allow-origin: "/*"
 stats.enabled: false
