@@ -2,7 +2,7 @@
 discovery.seed_hosts: ${CLUSTERHOSTS}
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
-cluster.initial_master_nodes: nexus
+cluster.initial_master_nodes: ${CLUSTERHOSTS}
 cluster.graceful_stop.min_availability: primaries
 cluster.routing.allocation.awareness.attributes: location
 cluster.routing.allocation.awareness.force.zone.values: OnPrem,AWS,GCP,Azure
