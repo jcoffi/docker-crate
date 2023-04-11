@@ -1,13 +1,10 @@
 # Crate Configuration
-discovery.seed_hosts: ${CLUSTERHOSTS}
+discovery.seed_hosts: nexus.chimp-beta.ts.net
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
-#cluster.initial_master_nodes: ${CLUSTERNODES}
 cluster.graceful_stop.min_availability: primaries
 cluster.routing.allocation.awareness.attributes: location
 cluster.routing.allocation.awareness.force.zone.values: OnPrem,AWS,GCP,Azure
-cluster.no_master_block: write
-cluster.auto_shrink_voting_configuration: true
 node.name: ${HOSTNAME}
 node.attr.location: ${LOCATION}
 node.store.allow_mmap: false
