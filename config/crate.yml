@@ -2,6 +2,7 @@
 discovery.seed_hosts: nexus.chimp-beta.ts.net
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
+cluster.name: cluster-anywhere
 cluster.graceful_stop.min_availability: primaries
 cluster.routing.allocation.awareness.attributes: location
 cluster.routing.allocation.awareness.force.zone.values: OnPrem,AWS,GCP,Azure
