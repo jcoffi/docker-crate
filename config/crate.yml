@@ -1,6 +1,5 @@
 # Crate Configuration
 discovery.seed_hosts: nexus.chimp-beta.ts.net
-discovery.zen.minimum_master_nodes: 3
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
 cluster.name: cluster-anywhere
