@@ -1,3 +1,11 @@
+# Paths
+path:
+  logs: /data/crate/log
+  data: /data/crate/data
+blobs:
+  path: /data/crate/blobs
+
+
 # Crate Configuration
 discovery.seed_hosts: nexus.chimp-beta.ts.net
 network.host: _tailscale0_,_local_
@@ -17,9 +25,4 @@ stats.enabled: false
 
 
 
-# Paths
-path:
-  logs: /data/crate/log
-  data: /data/crate/data
-blobs:
-  path: /data/crate/blobs
+
