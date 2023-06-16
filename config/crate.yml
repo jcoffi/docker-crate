@@ -7,6 +7,7 @@ blobs:
 
 
 # Crate Configuration
+gateway.recover_after_data_nodes: 3
 discovery.seed_hosts: nexus.chimp-beta.ts.net
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
