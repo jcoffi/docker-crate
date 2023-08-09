@@ -8,11 +8,11 @@ blobs:
 
 # Crate Configuration
 gateway.recover_after_data_nodes: 3
-discovery.seed_hosts: dell3050-1,dell-3050-2,dell7040-1,DESKTOP-P0ANK2P,nexus.chimp-beta.ts.net
+discovery.seed_hosts: dell3050-1,dell3050-2,dell7040-1,DESKTOP-P0ANK2P,nexus.chimp-beta.ts.net
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
 cluster.name: cluster-anywhere
-cluster.initial_master_nodes: nexus,dell7040-1,dell3050-1,dell-3050-2,DESKTOP-P0ANK2P
+cluster.initial_master_nodes: nexus,dell7040-1,dell3050-1,dell3050-2,DESKTOP-P0ANK2P
 cluster.graceful_stop.min_availability: primaries
 cluster.routing.allocation.awareness.attributes: location
 #cluster.routing.allocation.awareness.force.location.values: OnPrem,AWS,GCP,Azure
