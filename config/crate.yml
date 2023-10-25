@@ -17,6 +17,7 @@ cluster.graceful_stop.min_availability: primaries
 cluster.routing.allocation.awareness.attributes: location
 #cluster.routing.allocation.awareness.force.location.values: OnPrem,AWS,GCP,Azure
 cluster.routing.allocation.cluster_concurrent_rebalance: 4
+cluster.metadata.unsafe-bootstrap: false
 node.name: ${HOSTNAME}
 node.attr.location: ${LOCATION}
 node.store.allow_mmap: false
