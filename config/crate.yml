@@ -8,7 +8,7 @@ blobs:
 
 # Crate Configuration
 gateway.recover_after_data_nodes: 3
-discovery.seed_hosts: crate-cluster.chimp-beta.ts.net
+discovery.seed_hosts: ${CLUSTERHOSTS}
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
 cluster.name: cluster-anywhere
