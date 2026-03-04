@@ -7,12 +7,18 @@ blobs:
 
 
 # Crate Configuration
-gateway.recover_after_data_nodes: 3
-discovery.seed_hosts: ${CLUSTERHOSTS}
+gateway.recover_after_data_nodes: 2
+discovery.seed_hosts:
+  - 100.94.80.126:4300
+  - 100.100.34.79:4300
+  - 100.102.50.119:4300
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
 cluster.name: cluster-anywhere
-cluster.initial_master_nodes: nexus
+cluster.initial_master_nodes: 
+  - nexus
+  - dell7010
+  - justin-coffi-Latitude-9520
 cluster.graceful_stop.min_availability: primaries
 cluster.routing.allocation.awareness.attributes: location
 #cluster.routing.allocation.awareness.force.location.values: OnPrem,AWS,GCP,Azure
@@ -20,12 +26,11 @@ cluster.routing.allocation.cluster_concurrent_rebalance: 4
 cluster.metadata.unsafe-bootstrap: false
 node.name: ${HOSTNAME}
 node.attr.location: ${LOCATION}
-node.store.allow_mmap: false
+node.store.allow_mmap: true
 node.data: true
 http.cors.enabled: true
 http.cors.allow-origin: "/*"
 stats.enabled: false
-
 
 
 
