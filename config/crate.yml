@@ -9,9 +9,9 @@ blobs:
 # Crate Configuration
 gateway.recover_after_data_nodes: 2
 discovery.seed_hosts:
-  - 100.94.80.126:4300
-  - 100.100.34.79:4300
-  - 100.102.50.119:4300
+  - nexus:4300
+  - dell7010:4300
+  - justin-coffi-Latitude-9520:4300
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
 cluster.name: cluster-anywhere
