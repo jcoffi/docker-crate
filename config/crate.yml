@@ -9,9 +9,9 @@ blobs:
 # Crate Configuration
 gateway.recover_after_data_nodes: 2
 discovery.seed_hosts:
-  - nexus:4300
-  - dell7010:4300
-  - justin-coffi-Latitude-9520:4300
+  - nexus.chimp-beta.ts.net:4300
+  - dell7010.chimp-beta.ts.net:4300
+  - justin-coffi-Latitude-9520.chimp-beta.ts.net:4300
 network.host: _tailscale0_,_local_
 network.publish_host: _tailscale0_
 cluster.name: cluster-anywhere
